@@ -1,0 +1,79 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #112b4e;
+  color: white;
+  padding: 30px;
+}
+
+.contact-info {
+  display: flex;
+  gap: 15px;
+}
+
+.language-and-social {
+  display: flex;
+  gap: 20px;
+}
+
+.languages img,
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #112b4e;
+  color: white;
+}
+
+.contact-button .btn {
+  background-color: #e71c24;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.contact-button .btn:hover {
+  background-color: #c71a20;
+}

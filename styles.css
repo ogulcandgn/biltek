@@ -146,6 +146,7 @@ nav a {
 
 .home .content {
   display: flex;
+  align-items: center;
 }
 
 .home .content h3 {
@@ -219,4 +220,24 @@ nav a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.info-box-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-box-content2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-box-content svg {
+  cursor: pointer;
+}
+
+.info-box-content2 svg {
+  cursor: pointer;
 }

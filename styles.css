@@ -135,7 +135,7 @@ nav a {
   min-height: 80vh;
   display: flex;
   align-items: flex-end;
-  background: url("assets/truck.jpg") no-repeat;
+  background: url("assets/truck.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
 }

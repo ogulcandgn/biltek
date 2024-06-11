@@ -20,6 +20,9 @@ header {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-left: 82px;
+  margin-top: 50px;
+  margin-right: 20px;
 }
 
 .svg-container {
@@ -63,13 +66,15 @@ header {
 
 .flags img,
 .social-icons img {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+  margin-right: 10px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .social-icons i {
   color: white;
+  font-size: 20px;
 }
 
 .top-bar .social-icons a {
@@ -82,7 +87,12 @@ header {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  margin-top: 10px;
+  background: linear-gradient(
+    90deg,
+    #f1f1f1 2.77%,
+    #f1f1f1 52.25%,
+    rgba(241, 241, 241, 0) 75.61%
+  );
 }
 
 nav {
@@ -90,7 +100,7 @@ nav {
 }
 
 nav a {
-  margin-right: 20px;
+  margin-right: 50px;
   text-decoration: none;
   color: #000;
 }
@@ -104,8 +114,16 @@ nav a {
   padding: 10px 0px;
   font-size: 20px;
   cursor: pointer;
+  margin-top: 10px;
 }
 
 .contact-button button:hover {
   background-color: #b00439;
+}
+
+.line {
+  width: 1px;
+  height: 46px;
+  opacity: 0.2;
+  background: #fff;
 }

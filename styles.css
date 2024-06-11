@@ -2,6 +2,8 @@ body {
   margin: 0;
 }
 
+/* header */
+
 header {
   display: flex;
   background-color: #fff;
@@ -37,7 +39,6 @@ header {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
-  height: 178px;
 }
 
 .top-bar {
@@ -84,6 +85,7 @@ header {
 
 .nav-bar {
   display: flex;
+  height: 91px;
   justify-content: space-around;
   align-items: center;
   width: 100%;
@@ -126,4 +128,95 @@ nav a {
   height: 46px;
   opacity: 0.2;
   background: #fff;
+}
+
+/* home */
+.home {
+  min-height: 80vh;
+  display: flex;
+  align-items: flex-end;
+  background: url("assets/truck.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#home {
+  padding: 2rem 4%;
+}
+
+.home .content {
+  display: flex;
+}
+
+.home .content h3 {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+}
+
+.home .content h1 {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.info-box {
+  width: 420px;
+  height: 150px;
+  flex-shrink: 0;
+  background: #fff;
+  padding: 1rem;
+}
+
+.info-box h4 {
+  color: #0c2967;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.info-box p {
+  color: #0c2967;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.info-box2 {
+  width: 210px;
+  height: 150px;
+  flex-shrink: 0;
+  background: #dc0546;
+  padding: 1rem;
+  margin-left: 25px;
+}
+
+.info-box2 h4 {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.info-box2 p {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

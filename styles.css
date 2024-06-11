@@ -6,7 +6,6 @@ body {
 
 header {
   display: flex;
-  background-color: #fff;
   align-items: flex-start;
 }
 
@@ -29,10 +28,19 @@ header {
 
 .svg-container {
   display: flex;
+  z-index: 999;
 }
 
-.svg-container svg {
-  margin-right: -5px; /* SVG'leri birbirine yapıştırmak için negatif margin kullanıldı */
+.red-poligon {
+  position: relative;
+  left: 115px;
+  z-index: 999;
+}
+
+.blue-poligon {
+  position: relative;
+  left: 38px;
+  z-index: 999;
 }
 
 .info-container {
@@ -130,14 +138,20 @@ nav a {
   background: #fff;
 }
 
+.header-arrow {
+  position: absolute;
+  top: 180px;
+  z-index: 1;
+  left: 323px;
+}
+
 /* home */
 .home {
   min-height: 80vh;
   display: flex;
   align-items: flex-end;
   background: url("assets/truck.jpeg") no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-position: 25% 100%;
 }
 
 #home {

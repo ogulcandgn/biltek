@@ -161,14 +161,14 @@ nav a {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 15%; /* Resmin %25'i */
+  height: 15%;
   background: linear-gradient(
     to top,
     rgba(12, 41, 103, 1),
     rgba(12, 41, 103, 1),
     rgba(12, 41, 103, 0.2)
   );
-  pointer-events: none; /* Altındaki öğelerle etkileşimi engeller */
+  pointer-events: none;
 }
 
 #home {
@@ -276,4 +276,60 @@ nav a {
 
 .info-box-content2 svg {
   cursor: pointer;
+}
+
+/* home services */
+
+.home-services {
+  background-color: #0c2967;
+  min-height: 80vh;
+  color: #fff;
+  padding: 100px;
+}
+
+.services-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.services-nav-left,
+.nav-right {
+  display: flex;
+}
+
+.services-nav-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.services-nav-item svg {
+  margin-right: 10px;
+}
+
+.services-nav-right svg {
+  cursor: pointer;
+}
+
+.home-services span {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.services-line {
+  width: 1592px;
+  height: 1px;
+  opacity: 0.5;
+  background: #fff;
+}
+
+.services-line-group {
+  display: flex;
+  align-items: center;
 }

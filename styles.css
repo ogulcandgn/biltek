@@ -153,6 +153,7 @@ nav a {
   background: url("assets/truck.jpeg") no-repeat;
   background-position: 25% 100%;
   position: relative;
+  background-size: cover;
 }
 
 .home::after {
@@ -198,10 +199,11 @@ nav a {
 .home .content h1 {
   color: #fff;
   font-family: Urbanist;
-  font-size: 50px;
+  font-size: 70px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  padding-right: 10rem;
 }
 
 .info-box {
@@ -301,11 +303,15 @@ nav a {
 .services-nav-item {
   display: flex;
   align-items: center;
-  margin-right: 20px;
+  margin-right: 35px;
 }
 
 .services-nav-item svg {
   margin-right: 10px;
+}
+
+.services-nav-right {
+  margin-right: 15%;
 }
 
 .services-nav-right svg {
@@ -332,4 +338,67 @@ nav a {
 .services-line-group {
   display: flex;
   align-items: center;
+}
+
+.services-content {
+  display: flex;
+  padding: 50px;
+  justify-content: space-between;
+}
+
+.services-left {
+  flex: 1;
+}
+
+.services-right {
+  flex: 1;
+}
+
+.services-right img {
+  width: 100%;
+  margin-left: 5rem;
+}
+
+.services-left h1 {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.services-left p {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  opacity: 0.6;
+  line-height: normal;
+  padding: 4rem;
+}
+
+.services-actions {
+  display: flex;
+  gap: 20px;
+}
+
+.services-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b78e7;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.services-content img {
+  width: 639px;
+  height: 667px;
+  flex-shrink: 0;
 }

@@ -284,7 +284,7 @@ nav a {
 
 .home-services {
   background-color: #0c2967;
-  min-height: 80vh;
+  min-height: 70vh;
   color: #fff;
   padding: 100px;
 }
@@ -293,6 +293,10 @@ nav a {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+}
+
+.service-navbar-arrow:hover {
+  color: #dc0546;
 }
 
 .services-nav-left,
@@ -316,6 +320,15 @@ nav a {
 
 .services-nav-right svg {
   cursor: pointer;
+}
+
+.service-navbar-arrow {
+  fill: #fff;
+}
+
+.service-navbar-arrow:hover {
+  fill: #dc0546;
+  transition: 0.5s ease;
 }
 
 .home-services span {

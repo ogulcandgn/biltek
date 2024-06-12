@@ -436,3 +436,62 @@ nav a {
   z-index: 1;
   margin-left: 2rem;
 }
+
+/* info section */
+
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.info-section,
+.whatsapp-section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  font-size: 18px;
+}
+.info-section svg,
+.whatsapp-section svg {
+  margin-right: 10px;
+}
+.info-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.more-info {
+  display: flex;
+  align-items: center;
+}
+
+.info-text h3,
+.whatsapp-text h3 {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.info-text .main-text,
+.whatsapp-text .phone-number {
+  color: #fff;
+  font-family: Urbanist;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.info-bg,
+.whatsapp-bg {
+  position: absolute;
+}
+.whatsapp-section {
+  margin-left: 40px; /* Adjust spacing as needed */
+}

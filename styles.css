@@ -152,6 +152,23 @@ nav a {
   align-items: flex-end;
   background: url("assets/truck.jpeg") no-repeat;
   background-position: 25% 100%;
+  position: relative;
+}
+
+.home::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15%; /* Resmin %25'i */
+  background: linear-gradient(
+    to top,
+    rgba(12, 41, 103, 1),
+    rgba(12, 41, 103, 1),
+    rgba(12, 41, 103, 0.2)
+  );
+  pointer-events: none; /* Altındaki öğelerle etkileşimi engeller */
 }
 
 #home {
@@ -161,6 +178,7 @@ nav a {
 .home .content {
   display: flex;
   align-items: center;
+  padding-bottom: 6rem;
 }
 
 .home .content h3 {
@@ -173,10 +191,14 @@ nav a {
   opacity: 0.5;
 }
 
+.content .content-info {
+  margin-right: 7rem;
+}
+
 .home .content h1 {
   color: #fff;
   font-family: Urbanist;
-  font-size: 70px;
+  font-size: 50px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;

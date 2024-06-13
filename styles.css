@@ -625,3 +625,105 @@ nav a {
   opacity: 0.5;
   background: #0c2967;
 }
+
+/* NEWS */
+
+.news {
+  padding: 7rem;
+}
+
+.news-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.news-header h1 {
+  color: #0c2967;
+  font-family: Urbanist;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.news-header h2 {
+  color: #0c2967;
+  font-family: Urbanist;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 5px;
+  z-index: 5;
+}
+
+.news-header svg {
+  position: relative;
+  left: 45px;
+}
+
+.news-header-right {
+  display: flex;
+  align-items: center;
+}
+
+/* slider */
+
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slider-item {
+  position: relative;
+  flex: 1 0 20%; /* Each item takes 20% of the container's width */
+}
+
+.slider-item img {
+  width: 100%;
+  transition: transform 0.5s ease;
+  cursor: pointer;
+  height: 667px;
+}
+
+.slider-item .number {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: var(--Ana-Renk-Beyaz, #fff);
+  font-family: Urbanist;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+/* Image hover effects */
+.slider-item:nth-child(1):hover img {
+  transform-origin: left;
+  transform: scaleX(1.5); /* Expand to the right */
+}
+
+.slider-item:nth-child(2):hover img,
+.slider-item:nth-child(3):hover img,
+.slider-item:nth-child(4):hover img {
+  transform-origin: center;
+  transform: scaleX(1.5); /* Expand to both sides */
+}
+
+.slider-item:nth-child(5):hover img {
+  transform-origin: right;
+  transform: scaleX(1.5); /* Expand to the left */
+}
+
+/* Adjust non-hovered images */
+.slider-item img:not(:hover) {
+  width: 100%; /* Ensure non-hovered images maintain their base width */
+}

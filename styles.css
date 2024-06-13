@@ -519,7 +519,7 @@ nav a {
 .sectors-header {
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: space-around;
   gap: 20px;
 }
 
@@ -584,7 +584,6 @@ nav a {
 }
 
 .sector .icon {
-  margin-bottom: 10px;
   background-color: #dc0546;
   display: inline-block;
   padding: 0.2rem;
@@ -618,4 +617,11 @@ nav a {
   font-weight: 700;
   line-height: normal;
   text-decoration: none;
+}
+
+.sectors-line {
+  width: 1769px;
+  height: 1px;
+  opacity: 0.5;
+  background: #0c2967;
 }

@@ -648,7 +648,8 @@ nav a {
   line-height: normal;
 }
 
-.news-header h2 {
+.news-header h2,
+.information-wrapper h2 {
   color: #0c2967;
   font-family: Urbanist;
   font-size: 25px;
@@ -659,7 +660,8 @@ nav a {
   z-index: 5;
 }
 
-.news-header svg {
+.news-header svg,
+.information-wrapper svg {
   position: relative;
   left: 45px;
 }
@@ -697,7 +699,7 @@ nav a {
   position: absolute;
   top: 10px;
   left: 10px;
-  color: var(--Ana-Renk-Beyaz, #fff);
+  color: #fff;
   font-family: Urbanist;
   font-size: 50px;
   font-style: normal;
@@ -715,15 +717,39 @@ nav a {
 .slider-item:nth-child(3):hover img,
 .slider-item:nth-child(4):hover img {
   transform-origin: center;
-  transform: scaleX(1.5); /* Expand to both sides */
+  transform: scaleX(1.5);
 }
 
 .slider-item:nth-child(5):hover img {
   transform-origin: right;
-  transform: scaleX(1.5); /* Expand to the left */
+  transform: scaleX(1.5);
 }
 
-/* Adjust non-hovered images */
 .slider-item img:not(:hover) {
-  width: 100%; /* Ensure non-hovered images maintain their base width */
+  width: 100%;
+}
+
+/* information wrapper */
+
+.information-wrapper {
+  padding: 7rem;
+}
+
+.information-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid #dc0546;
+  padding: 3rem;
+}
+
+.information-wrapper p {
+  color: #000;
+  font-family: Urbanist;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  width: 475px;
 }

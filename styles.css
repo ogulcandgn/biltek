@@ -753,3 +753,24 @@ nav a {
   text-align: left;
   width: 475px;
 }
+
+/* information count */
+
+.information-count {
+  padding: 5rem 15rem;
+}
+
+.counts {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.counts-item {
+  display: flex;
+  align-items: center;
+}
+
+.information-count img {
+  opacity: 0.4;
+}

@@ -730,34 +730,176 @@ nav a {
 }
 
 /* information wrapper */
-
 .information-wrapper {
-  padding: 7rem;
+  text-align: center;
 }
 
-.information-area {
+.information div.information-wrapper .information-first-text img {
+  width: 12.8vw;
+}
+
+.information div.information-wrapper .information-second-text img {
+  width: 11.05vw;
+}
+
+.information {
+  padding-bottom: 100px;
+}
+
+.information div.information-wrapper {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
-  justify-content: space-between;
-  border: 1.5px solid #dc0546;
-  padding: 3rem;
+  justify-content: flex-end;
+  margin: 0 7.2%;
+  border: 1px solid #dc0546;
+  position: relative;
+  padding: 4vw 0;
 }
 
-.information-wrapper p {
-  color: #000;
-  font-family: Urbanist;
-  font-size: 25px;
-  font-style: normal;
+.information .information-wrapper .information-text {
+  font-size: 1.3vw;
   font-weight: 700;
-  line-height: normal;
+  line-height: 1.57vw;
+  max-width: 35%;
+  margin-right: 5%;
   text-align: left;
-  width: 475px;
+}
+
+.information .news-header-right {
+  margin-right: 3rem;
+}
+
+.information .information-wrapper .information-text p {
+  width: 85%;
+  margin-left: 3rem;
+}
+
+.information .information-wrapper .information-button p {
+  transition: 0.4s;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.information .information-wrapper .information-button p:hover {
+  color: #dc0546;
+}
+
+.information .information-wrapper .information-button .information-circle {
+  width: 4.2vw;
+  height: 4.2vw;
+  display: inline-block;
+  background: #0c2967;
+  border-radius: 50%;
+  opacity: 0.05;
+  position: absolute;
+  top: calc(50% - 2.3vw);
+  left: -7%;
+  pointer-events: none;
+}
+
+.information .information-wrapper div .information-line {
+  width: 17vw;
+  height: 23px;
+  position: absolute;
+  background: #ffffff;
+  top: -11.5px;
+  left: 22px;
+  z-index: 1;
+}
+
+.information .information-wrapper div .information-red-mini-line {
+  width: 5.47vw;
+  height: 1px;
+  position: absolute;
+  background: #dc0546;
+  top: -0.6vw;
+  left: 1.5vw;
+  z-index: 1;
+}
+
+.information .information-wrapper div .information-blue-mini-line {
+  width: 2.78vw;
+  height: 1px;
+  position: absolute;
+  background: #0c2967;
+  top: -0.6vw;
+  right: 2.3vw;
+  z-index: 1;
+}
+
+.information .information-wrapper div .information-blue-mini-line::after {
+  content: "";
+  width: 7.2vw;
+  height: 1px;
+  position: absolute;
+  background: #0c2967;
+  bottom: -7.9vw;
+  right: -3px;
+  z-index: 1;
+}
+
+.information .information-wrapper div .information-red-mini-line::before {
+  content: "";
+  width: 5.47vw;
+  height: 1px;
+  position: absolute;
+  background: #dc0546;
+  top: -0.6vw;
+  right: -3.9vw;
+  z-index: 1;
+}
+
+.information .information-wrapper div .information-red-mini-line::after {
+  content: "";
+  width: 5.47vw;
+  height: 1px;
+  position: absolute;
+  background: #dc0546;
+  bottom: -6.5vw;
+  left: 0;
+  z-index: 1;
+}
+
+.information .information-wrapper div .information-first-text {
+  position: absolute;
+  top: -2.5vw;
+  z-index: 2;
+  left: 3.4vw;
+}
+
+.information .information-wrapper div .information-first-text p {
+  color: white;
+  font-size: 2.1vw;
+  font-weight: bold;
+  position: absolute;
+  top: 23%;
+  left: 23%;
+}
+
+.information .information-wrapper div .information-second-text {
+  position: absolute;
+  top: 13%;
+  left: 13%;
+}
+
+.information .information-wrapper div .information-second-text p {
+  color: white;
+  font-size: 2.1vw;
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 23%;
+}
+
+.information .information-wrapper .information-first-text p {
+  margin-bottom: 2rem;
 }
 
 /* information count */
 
 .information-count {
-  padding: 5rem 15rem;
+  padding: 5rem 5rem;
 }
 
 .counts {
@@ -773,4 +915,15 @@ nav a {
 
 .information-count img {
   opacity: 0.4;
+}
+
+.information-count h3 {
+  color: #0c2967;
+  font-family: Urbanist;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  position: relative;
+  right: 14px;
 }

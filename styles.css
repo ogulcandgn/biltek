@@ -743,7 +743,7 @@ nav a {
 }
 
 .information {
-  padding-bottom: 100px;
+  padding: 6rem 0;
 }
 
 .information div.information-wrapper {
@@ -926,4 +926,23 @@ nav a {
   line-height: normal;
   position: relative;
   right: 14px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7rem;
+}
+
+.footer-poligon {
+  position: relative;
+}
+
+.footer .red-poligon {
+  position: relative;
+  top: 161px;
+  left: 81px;
 }
